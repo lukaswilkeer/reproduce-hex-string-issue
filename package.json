@@ -1,0 +1,30 @@
+{
+  "name": "reproduce-hex-string-issue",
+  "version": "0.0.1",
+  "description": "A reproduceble example os toHexString issue. #8432 on automattic/mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js",
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.5",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7"
+  },
+  "keywords": [
+    "issue",
+    "reproduce",
+    "example"
+  ],
+  "author": "@lukaswilkeer",
+  "license": "MIT"
+}
