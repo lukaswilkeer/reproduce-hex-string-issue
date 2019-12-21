@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import bluebird from 'bluebird'
 
 // Fixme: Add mongo deploy URI
-const mongoURI = process.env.MODE === 'dev'
+const mongoURI = process.env.MODE === 'dev' || 'dev'
   ? 'mongodb://localhost/blink'
   : 'mongodb://lukaswilkeer:a9ewiPRYnY4o@ds145356.mlab.com:45356/blink'
 

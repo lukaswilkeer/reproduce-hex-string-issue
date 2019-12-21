@@ -25,9 +25,10 @@ router.post('/check/:id', async (req, res, next) => {
 	const getId = (item) => item._id
 	const match = (current) => (id) => current === id
 
-	const item = items.filter(match)
+	const matchCurrentId = match(req.params.id)
+	const item = items.filter(matchCurrentId)
 
-	return item.lenght > 0
+	return item.length > 0
 		? res.status(200).send(item)
 		: res.status(500).send({'message': 'Not itens matched'})
 })
