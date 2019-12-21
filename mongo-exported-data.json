@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5d9a398306dbac37c44a920f"},"category":["luxury","oister"],"itens":8,"name":"Rolex Submariner II","brand":"Rolex","type":"Luxury","code":2,"price":39000,"__v":0,"quant":100.0,"id":"5d9a398306dbac37c44a920f"}
+{"_id":{"$oid":"5dbce3df4704602c61a831a9"},"category":["[adventure]"],"itens":30,"images":[null],"name":"G-Shock - 2","brand":"g-shock","type":"adventure","code":1,"price":39000,"__v":0}
+{"_id":{"$oid":"5dbce9c64704602c61a831ac"},"category":["[adventure]"],"itens":713,"images":[null],"name":"G-Shock - 3","brand":"g-shock","type":"adventure","code":3,"price":39000,"__v":0}
