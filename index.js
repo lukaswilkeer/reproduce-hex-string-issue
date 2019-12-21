@@ -1,6 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import { model } from './model.js'
+import { model } from './model/model.js'
 import './db-connection.js'
 
 const router = express.Router()
@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 
-router.get('/item', async (req, res, next) => {
+router.get('/items', async (req, res, next) => {
 	const items = await model.find({}).catch(err => null)
 	const getId = (item) => item._id
 
@@ -32,6 +32,7 @@ router.post('/check/:id', async (req, res, next) => {
 		: res.status(500).send({'message': 'Not itens matched'})
 })
 
+app.use(router)
 app.listen(port, () => console.info(`App running on ${port}`))
 
 export default app
