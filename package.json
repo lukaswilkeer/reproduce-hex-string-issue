@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node index.js",
     "dev": "nodemon --exec babel-node index.js",
-    "test": "mocha test --require @babel/register"
+    "test": "mocha test --exit --require @babel/register"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
