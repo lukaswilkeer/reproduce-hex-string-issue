@@ -1,6 +1,6 @@
 {
   "name": "reproduce-hex-string-issue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A reproduceble example os toHexString issue. #8432 on automattic/mongoose",
   "main": "index.js",
   "scripts": {

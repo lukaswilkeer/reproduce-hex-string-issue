@@ -29,7 +29,7 @@ router.post('/check/:id', async (req, res, next) => {
 	const item = items.filter(matchCurrentId)
 
 	return item.length > 0
-		? res.status(200).send(item)
+		? res.status(200).send(true)
 		: res.status(500).send({'message': 'Not itens matched'})
 })
 

@@ -21,7 +21,7 @@ it('should match the param id with model`s id', (done) => {
 		.post(`/check/${id}`)
 		.send()
 		.expect((response) => {
-			expect(response.body).to.be.a('boolean')
+			expect(response.body).to.be.a('boolen')
 			expect(response.body).to.be.true()
 		}).end(done)
 })
