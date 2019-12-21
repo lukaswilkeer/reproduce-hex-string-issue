@@ -50,4 +50,4 @@ export const clockAnalyticsModel = mongoose.model('ClockAnalyticSchema', clockAn
 
 export const userAnalyticsModel = mongoose.model('UserAnalyticsSchema', userAanalyticsSchema )
 
-export const clockModel = mongoose.model('ClockSchema', clockSchema)
+export const model = mongoose.model('ClockSchema', clockSchema)
