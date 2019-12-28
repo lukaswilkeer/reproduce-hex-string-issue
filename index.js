@@ -22,14 +22,12 @@ router.get('/items', async (req, res, next) => {
 
 router.post('/check/:id', async (req, res, next) => {
 	const items = await model.find({}).catch(err => null)
-	const getId = (item) => item._id
-	const match = (current) => (id) => current === id
-
-	const matchCurrentId = match(req.params.id)
-	const item = items.filter(matchCurrentId)
+	
+	const filterItems = (item) => item.id == req.params.id
+	const item = items.filter(filterItems)
 
 	return item.length > 0
-		? res.status(200).send(true)
+		? res.status(200).send({'message': true})
 		: res.status(500).send({'message': 'No items matched'})
 })
 
