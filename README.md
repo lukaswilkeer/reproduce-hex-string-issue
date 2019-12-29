@@ -23,3 +23,7 @@ mongoose.ObjectId.get(v => v.toString());
 Before you'll need to import the mongo data, using mongoimport:
 
 ```mongoimport --db=blink --collection=clocks```
+
+### Status
+
+Current fixed using .id intead ._id method.
